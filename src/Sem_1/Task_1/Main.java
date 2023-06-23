@@ -7,7 +7,7 @@ package Sem_1.Task_1;
 
 import java.time.LocalTime;
 import java.util.Scanner;
-
+// fds
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
