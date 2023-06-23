@@ -1,5 +1,6 @@
 package HOMEWORKS.HW1.Task_2;
 
+
 // Вывести все простые числа от 1 до 1000
 public class Main {
     public static void main(String[] args) {
@@ -12,6 +13,8 @@ public class Main {
                 }
             }
             if (flag) System.out.print(i + " ");
+
         }
     }
 }
+
