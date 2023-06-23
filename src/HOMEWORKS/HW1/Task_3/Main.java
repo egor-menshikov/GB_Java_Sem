@@ -21,7 +21,7 @@ public class Main {
                     case '/' -> a / b;
                     case '+' -> a + b;
                     case '-' -> a - b;
-                    default -> throw new IllegalStateException("Unexpected value: " + operation);
+                    default -> throw new IllegalStateException("Неизвестная операция: " + operation);
                 };
     }
 }
