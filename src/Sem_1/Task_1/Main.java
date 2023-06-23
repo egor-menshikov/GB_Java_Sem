@@ -19,11 +19,11 @@ public class Main {
         if (hour >= 5 && hour < 12)
             System.out.printf("Доброе утро, %s!", name);
         else if (hour >= 12 && hour < 18)
-            System.out.printf("Добрый день, %s", name);
+            System.out.printf("Добрый день, %s!", name);
         else if (hour >= 18 && hour < 23)
-            System.out.printf("Добрый вечер, %s", name);
+            System.out.printf("Добрый вечер, %s!", name);
         else
-            System.out.printf("Доброй ночи, %s", name);
+            System.out.printf("Доброй ночи, %s!", name);
     }
 }
 
