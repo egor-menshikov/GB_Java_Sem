@@ -4,12 +4,12 @@ package HOMEWORKS.HW1.Task_4;
 public class Main {
     public static void main(String[] args) {
 //        String equation = "2? + 1?5 = 168";
-        String equation = "14?9 + 1?64 = 2833";
-        String A = "14?9";
-        String B = "1?64";
-        StringBuilder C = new StringBuilder("2833");
-        C.setCharAt(1, '+');
-        System.out.println(C);
+//        String equation = "14?9 + 1?64 = 2833";
+//        String A = "14?9";
+//        String B = "1?64";
+//        StringBuilder C = new StringBuilder("2833");
+//        C.setCharAt(1, '+');
+//        System.out.println(C);
     }
 
     public static StringBuilder eq_calc(StringBuilder a, StringBuilder b, StringBuilder c, int pos, int digit) {
@@ -41,10 +41,24 @@ public class Main {
                     else {
                         char_b = Character.forDigit(Character.getNumericValue(c.charAt(c.length() - pos)) -
                                 Character.getNumericValue(char_a) - digit + 10, 10);
+                        b.setCharAt(b.length() - pos, char_b);
                         return eq_calc(a, b, c, pos + 1, 1);
                     }
                 }
-                else if
+                else if (!Character.isDigit(char_a) && Character.isDigit(char_b)) {
+                    if (Character.getNumericValue(c.charAt(c.length() - pos)) >= char_b) {
+                        char_a = Character.forDigit(Character.getNumericValue(c.charAt(c.length() - pos)) -
+                                Character.getNumericValue(char_b) - digit, 10);
+                        a.setCharAt(a.length() - pos, char_a);
+                        return eq_calc(a, b, c, pos + 1, 0);
+                    }
+                    else {
+                        char_a = Character.forDigit(Character.getNumericValue(c.charAt(c.length() - pos)) -
+                                Character.getNumericValue(char_b) - digit + 10, 10);
+                        a.setCharAt(a.length() - pos, char_a);
+                        return eq_calc(a, b, c, pos + 1, 1);
+                    }
+                }
             }
         }
     }
