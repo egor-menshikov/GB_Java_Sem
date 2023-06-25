@@ -1,51 +1,51 @@
 package HOMEWORKS.HW1.Task_4;
 
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        String equation = "2? + ?5 = 69";
-        String[] eq_list = equation.split(" ");
-        System.out.println(Arrays.toString(eq_list));
-        int[][] num1 = num_parse(eq_list[0]);
-        int[][] num2 = num_parse(eq_list[2]);
-        System.out.println();
-        print_arr(num1);
-        System.out.println();
-        print_arr(num2);
-
-        double base = 10;
-        int sum = 0;
-        int k;
-        for (int i = num2.length - 1; i >= 0; i--) {
-            k = (int) Math.pow(base, num2.length - 1 - i);
-            if (num2[i][1] == 0)
-                sum += num2[i][0] * k;
-            else {
-                num2[i][1] = k;
-            }
-        }
-        System.out.println(sum);
-        print_arr(num2);
+//        String equation = "2? + 1?5 = 168";
+        String equation = "14?9 + 1?64 = 2833";
+        String A = "14?9";
+        String B = "1?64";
+        StringBuilder C = new StringBuilder("2833");
+        C.setCharAt(1, '+');
+        System.out.println(C);
     }
 
-    static int[][] num_parse(String num_str) {
-        int[][] num_arr = new int[num_str.length()][2];
-        for (int i = num_str.length() - 1; i >= 0; i--) {
-            if (Character.isDigit(num_str.charAt(i))) {
-                num_arr[i][0] = Integer.parseInt(Character.toString(num_str.charAt(i)));
-            } else {
-                num_arr[i][0] = 0;
-                num_arr[i][1] = 1;
-            }
-        }
-        return num_arr;
-    }
+    public static StringBuilder eq_calc(StringBuilder a, StringBuilder b, StringBuilder c, int pos, int digit) {
+        int sum = Integer.parseInt(String.valueOf(a)) + Integer.parseInt(String.valueOf(b));
 
-    static void print_arr( int[][] arr) {
-        for (int[] item : arr
-        ) {
-            System.out.println(Arrays.toString(item));
+        if (a.length() < pos && b.length() < pos && sum == Integer.parseInt(String.valueOf(c))) {
+            return new StringBuilder(a + " + " + b + " = " + c);
+        } else if (a.length() < pos && b.length() < pos && sum != Integer.parseInt(String.valueOf(c))) {
+            return new StringBuilder("Уравнение невозможно решить");
+        } else {
+            if (a.length() >= pos && b.length() >= pos) {
+                char char_a = a.charAt(a.length() - pos);
+                char char_b = b.charAt(b.length() - pos);
+
+                if (Character.isDigit(char_a) && Character.isDigit(char_b)) {
+                    if (Character.getNumericValue(c.charAt(c.length() - pos)) >=
+                            Character.getNumericValue(char_a) + Character.getNumericValue(char_b)) {
+                        return eq_calc(a, b, c, pos + 1, 0);
+                    }
+                    else return eq_calc(a, b, c, pos + 1, 1);
+                }
+                else if (Character.isDigit(char_a) && !Character.isDigit(char_b)) {
+                    if (Character.getNumericValue(c.charAt(c.length() - pos)) >= char_a) {
+                        char_b = Character.forDigit(Character.getNumericValue(c.charAt(c.length() - pos)) -
+                                Character.getNumericValue(char_a) - digit, 10);
+                        b.setCharAt(b.length() - pos, char_b);
+                        return eq_calc(a, b, c, pos + 1, 0);
+                    }
+                    else {
+                        char_b = Character.forDigit(Character.getNumericValue(c.charAt(c.length() - pos)) -
+                                Character.getNumericValue(char_a) - digit + 10, 10);
+                        return eq_calc(a, b, c, pos + 1, 1);
+                    }
+                }
+                else if
+            }
         }
     }
 }
