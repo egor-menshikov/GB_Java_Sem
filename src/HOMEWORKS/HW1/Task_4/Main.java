@@ -17,16 +17,16 @@ public class Main {
         double base = 10;
         int sum = 0;
         int k;
-        for (int i = num1.length - 1; i >= 0; i--) {
-            k = (int) Math.pow(base, num1.length - 1 - i);
-            if (num1[i][1] == 0)
-                sum += num1[i][0] * k;
+        for (int i = num2.length - 1; i >= 0; i--) {
+            k = (int) Math.pow(base, num2.length - 1 - i);
+            if (num2[i][1] == 0)
+                sum += num2[i][0] * k;
             else {
-                num1[i][1] = k;
+                num2[i][1] = k;
             }
         }
         System.out.println(sum);
-        print_arr(num1);
+        print_arr(num2);
     }
 
     static int[][] num_parse(String num_str) {
