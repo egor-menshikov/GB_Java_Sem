@@ -6,6 +6,7 @@ public class Main {
         StringBuilder equation = new StringBuilder("14?9 + 1?64 = 2833");
     }
 
+
     public static StringBuilder eq_calc(StringBuilder a, StringBuilder b, StringBuilder c, int pos, int digit) {
         int sum = Integer.parseInt(String.valueOf(a)) + Integer.parseInt(String.valueOf(b));
 
