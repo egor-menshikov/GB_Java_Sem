@@ -8,22 +8,27 @@ public class Main {
         StringBuilder A = new StringBuilder("1?6?");
         StringBuilder B = new StringBuilder("5?9");
         StringBuilder C = new StringBuilder("2517");
-        System.out.println(eq_calc(A, B, C, 0, 0, false));
+        System.out.println(eq_calc(A, B, C, 1, 0, false));
     }
 
 
     public static StringBuilder eq_calc(StringBuilder a, StringBuilder b, StringBuilder c, int pos, int digit, boolean flag) {
-        int sum = Integer.parseInt(String.valueOf(a)) + Integer.parseInt(String.valueOf(b));
 
-        if (a.length() < pos && b.length() < pos && sum == Integer.parseInt(String.valueOf(c))) {
-            return new StringBuilder(a + " + " + b + " = " + c);
+        if (a.length() < pos && b.length() < pos) {
+            int sum = Integer.parseInt(String.valueOf(a)) + Integer.parseInt(String.valueOf(b));
+
+            if (sum == Integer.parseInt(String.valueOf(c))) {
+                return new StringBuilder(a + " + " + b + " = " + c);
+            }
+
+            else if (!flag) {
+                return eq_calc(a, b, c, 1, 1, true);
         }
-        else if (a.length() < pos && b.length() < pos && sum != Integer.parseInt(String.valueOf(c)) && !flag) {
-            return eq_calc(a, b, c, 0, 1, true);
+            else {
+                return new StringBuilder("Уравнение невозможно решить.");
+            }
         }
-        else if (a.length() < pos && b.length() < pos && sum != Integer.parseInt(String.valueOf(c)) && flag) {
-            return new StringBuilder("Уравнение невозможно решить.");
-        }
+
         else {
             if (a.length() >= pos && b.length() >= pos) {
                 char char_a = a.charAt(a.length() - pos);
