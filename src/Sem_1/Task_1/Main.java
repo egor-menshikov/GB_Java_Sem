@@ -26,4 +26,3 @@ public class Main {
             System.out.printf("Доброй ночи, %s!", name);
     }
 }
-
