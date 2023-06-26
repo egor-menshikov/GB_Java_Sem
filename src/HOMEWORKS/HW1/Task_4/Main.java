@@ -4,7 +4,7 @@ package HOMEWORKS.HW1.Task_4;
 public class Main {
     public static void main(String[] args) {
 //        1968 549 2517
-        StringBuilder A = new StringBuilder("1?6?");
+        StringBuilder A = new StringBuilder("1?68");
         StringBuilder B = new StringBuilder("5?9");
         StringBuilder C = new StringBuilder("2517");
 
