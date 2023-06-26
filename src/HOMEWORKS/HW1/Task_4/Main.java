@@ -3,7 +3,6 @@ package HOMEWORKS.HW1.Task_4;
 
 public class Main {
     public static void main(String[] args) {
-//        StringBuilder equation = new StringBuilder("14?9 + 1?64 = 2833");
 //        1968 549
         StringBuilder A = new StringBuilder("1?6?");
         StringBuilder B = new StringBuilder("5?9");
