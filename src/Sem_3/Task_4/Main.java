@@ -18,6 +18,7 @@ public class Main {
 
     }
 
+
     static void addBook(String genreBook, String nameBook) {
         for (int i = 0; i < list.size(); i++) {
             List<String> genreList = list.get(i);
