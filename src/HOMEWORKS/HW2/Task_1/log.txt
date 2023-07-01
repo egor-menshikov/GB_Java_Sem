@@ -1,0 +1,16 @@
+июл. 01, 2023 10:41:18 PM HOMEWORKS.HW2.Task_1.Main logger
+INFO: Считываем файл.
+июл. 01, 2023 10:41:18 PM HOMEWORKS.HW2.Task_1.Main logger
+INFO: Файл считан.
+июл. 01, 2023 10:41:18 PM HOMEWORKS.HW2.Task_1.Main logger
+INFO: Текст из файла передан в объект String.
+июл. 01, 2023 10:41:18 PM HOMEWORKS.HW2.Task_1.Main logger
+INFO: Парсим текст.
+июл. 01, 2023 10:41:18 PM HOMEWORKS.HW2.Task_1.Main logger
+INFO: Парсинг закончен успешно, надеюсь.
+июл. 01, 2023 10:41:18 PM HOMEWORKS.HW2.Task_1.Main logger
+INFO: Собираем распарсенный текст в ответ.
+июл. 01, 2023 10:41:18 PM HOMEWORKS.HW2.Task_1.Main logger
+INFO: Строка собрана и передана.
+июл. 01, 2023 10:41:18 PM HOMEWORKS.HW2.Task_1.Main logger
+INFO: Текст записан в файл.
