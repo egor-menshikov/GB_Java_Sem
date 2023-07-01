@@ -1,0 +1,72 @@
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 20 <-> 6
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [6, 20, 1, 13, 7, 1, 10, 14, 15, 12]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 20 <-> 1
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [6, 1, 20, 13, 7, 1, 10, 14, 15, 12]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 20 <-> 13
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [6, 1, 13, 20, 7, 1, 10, 14, 15, 12]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 20 <-> 7
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [6, 1, 13, 7, 20, 1, 10, 14, 15, 12]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 20 <-> 1
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [6, 1, 13, 7, 1, 20, 10, 14, 15, 12]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 20 <-> 10
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [6, 1, 13, 7, 1, 10, 20, 14, 15, 12]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 20 <-> 14
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [6, 1, 13, 7, 1, 10, 14, 20, 15, 12]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 20 <-> 15
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [6, 1, 13, 7, 1, 10, 14, 15, 20, 12]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 20 <-> 12
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [6, 1, 13, 7, 1, 10, 14, 15, 12, 20]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 6 <-> 1
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [1, 6, 13, 7, 1, 10, 14, 15, 12, 20]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 13 <-> 7
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [1, 6, 7, 13, 1, 10, 14, 15, 12, 20]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 13 <-> 1
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [1, 6, 7, 1, 13, 10, 14, 15, 12, 20]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 13 <-> 10
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [1, 6, 7, 1, 10, 13, 14, 15, 12, 20]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 15 <-> 12
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [1, 6, 7, 1, 10, 13, 14, 12, 15, 20]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 7 <-> 1
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [1, 6, 1, 7, 10, 13, 14, 12, 15, 20]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 14 <-> 12
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [1, 6, 1, 7, 10, 13, 12, 14, 15, 20]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 6 <-> 1
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [1, 1, 6, 7, 10, 13, 12, 14, 15, 20]
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: 13 <-> 12
+июл. 02, 2023 12:05:30 AM HOMEWORKS.HW2.Task_2.Main bubbleSort
+INFO: [1, 1, 6, 7, 10, 12, 13, 14, 15, 20]

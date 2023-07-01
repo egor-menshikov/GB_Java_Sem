@@ -1,5 +1,6 @@
 package HOMEWORKS.HW2.Task_1;
 
+// Задание про парсинг JSON-строки из файла.
 
 import java.io.FileReader;
 import java.io.FileWriter;
