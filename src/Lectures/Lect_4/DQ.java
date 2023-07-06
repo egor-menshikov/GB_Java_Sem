@@ -1,4 +1,4 @@
-package Lect_4;
+package Lectures.Lect_4;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
