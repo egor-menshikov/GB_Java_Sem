@@ -1,4 +1,4 @@
-package Lect_4;
+package Lectures.Lect_4;
 
 public class Main {
     public static void main(String[] args) {
