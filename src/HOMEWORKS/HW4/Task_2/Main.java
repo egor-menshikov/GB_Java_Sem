@@ -4,13 +4,17 @@ package HOMEWORKS.HW4.Task_2;
 //        enqueue() - помещает элемент в конец очереди,
 //        dequeue() - возвращает первый элемент из очереди и удаляет его,
 //        first() - возвращает первый элемент из очереди, не удаляя.
-
-import java.util.LinkedList;
-
 public class Main {
     public static void main(String[] args) {
-        MyQueue myQ = new MyQueue();
-        System.out.println(myQ.size());
-        LinkedList<Integer> list = new LinkedList<>();
+        MyQueue mq = new MyQueue();
+        int a = 13;
+        mq.enqueue(a);
+        mq.enqueue("14");
+        mq.enqueue('%');
+        mq.print();
+        System.out.println(mq.dequeue());
+        mq.print();
+        System.out.println(mq.first());
+        mq.print();
     }
 }
