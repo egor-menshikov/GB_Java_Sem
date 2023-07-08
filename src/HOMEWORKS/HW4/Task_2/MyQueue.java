@@ -8,11 +8,7 @@ package HOMEWORKS.HW4.Task_2;
 import java.util.LinkedList;
 
 public class MyQueue {
-    LinkedList<Object> myQ = new LinkedList<>();
-
-    int size() {
-        return myQ.size();
-    }
+    private final LinkedList<Object> myQ = new LinkedList<>();
 
     void enqueue(Object item) {
         myQ.add(item);
@@ -20,5 +16,16 @@ public class MyQueue {
 
     Object dequeue() {
         return myQ.pollFirst();
+    }
+
+    Object first() {
+        return myQ.peekFirst();
+    }
+
+    void print() {
+        for (Object item : myQ) {
+            System.out.printf("%s ", item);
+        }
+        System.out.println("\n");
     }
 }

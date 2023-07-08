@@ -10,5 +10,11 @@ public class Main {
         int a = 13;
         mq.enqueue(a);
         mq.enqueue("14");
+        mq.enqueue('%');
+        mq.print();
+        System.out.println(mq.dequeue());
+        mq.print();
+        System.out.println(mq.first());
+        mq.print();
     }
 }
