@@ -30,7 +30,7 @@ public class Main {
         w4.salary = 100;
         w4.id = 1000;
 
-        var workers = new HashSet<>(Arrays.asList(w1, w2));
+        var workers = new HashSet<>(Arrays.asList(w1, w2, w3));
         for (var worker :
                 workers) {
             System.out.println(worker);
