@@ -9,5 +9,5 @@ public class Laptop {
         double screen;
         Color color;
 
-        private enum Color {SILVER, BLACK}
+        public enum Color {SILVER, BLACK}
 }
