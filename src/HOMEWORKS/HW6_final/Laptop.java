@@ -1,11 +1,8 @@
 package HOMEWORKS.HW6_final;
 
 public class Laptop {
-        String name;
-        String cpu;
-        int ram;
-        int ssd;
-        String gpu;
+        String name, cpu, gpu;
+        int ram, ssd;
         double screen;
         Color color;
 
