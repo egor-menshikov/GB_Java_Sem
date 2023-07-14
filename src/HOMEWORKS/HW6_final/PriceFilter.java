@@ -17,7 +17,7 @@ public class PriceFilter {
         this.params = params;
     }
 
-    public void receiveParams() {
+    public void filter() {
         Scanner sc = new Scanner(System.in);
         int selection = -1;
         while (selection != 7) {
@@ -30,7 +30,7 @@ public class PriceFilter {
                 selection = sc.nextInt();
             }
             switch (selection) {
-                case 1 -> filter();
+                case 1 -> applyParams();
                 case 2 -> {
                     System.out.println(Text.menuRam);
                     params.put("ram", sc.nextInt());
@@ -59,7 +59,16 @@ public class PriceFilter {
         }
     }
 
-    private void filter() {
+    private void applyParams() {
+        for (Laptop item :
+                set) {
+            if ((params.get("ram") == null || (int) params.get("ram") <= item.getRam()) &&
+                    (params.get("ssd") == null || (int) params.get("ssd") <= item.getSsd()) &&
+                    (params.get("screen") == null || (int) params.get("screen") <= item.getScreen()) &&
+                    (params.get("price") == null || (int) params.get("price") >= item.getPrice()) &&
+                    (params.get("color") == null || item.getColor().equals(params.get("color"))))
+                System.out.println(item);
+        }
     }
 
 }
