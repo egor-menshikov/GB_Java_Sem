@@ -57,7 +57,6 @@ public class PriceFilter {
                 case 7 -> System.out.println(Text.menuExit);
             }
         }
-
     }
 
     private void filter() {
