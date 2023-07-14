@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class PriceFilter {
     private HashSet<Laptop> set;
-    private HashMap<String, Object> params;
+    private final HashMap<String, Object> params;
 
     public PriceFilter(HashSet<Laptop> set) {
         this(new HashMap<>());

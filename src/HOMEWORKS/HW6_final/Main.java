@@ -13,9 +13,6 @@ public class Main {
         set.add(l1);
         set.add(l2);
         PriceFilter pf = new PriceFilter(set);
-//        for (Laptop item : set) {
-//            System.out.println(item);
-//        }
         pf.filter();
 
     }
