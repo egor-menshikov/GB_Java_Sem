@@ -1,14 +1,18 @@
 package HOMEWORKS.HW6_final;
 
 public class Laptop {
-    String name, cpu, gpu;
-    int ram, ssd, price;
-    double screen;
-    Color color;
+    private final String name;
+    private final String cpu;
+    private final String gpu;
+    private final int ram;
+    private final int ssd;
+    private int price;
+    private final int screen;
+    private final Color color;
 
-    public enum Color {SILVER, BLACK, RED, BLUE}
+    public enum Color {SILVER, BLACK, BLUE}
 
-    public Laptop(String name, String cpu, String gpu, int ram, int ssd, int price, double screen, Color color) {
+    public Laptop(String name, String cpu, String gpu, int ram, int ssd, int price, int screen, Color color) {
         this.name = name;
         this.cpu = cpu;
         this.gpu = gpu;
@@ -17,6 +21,38 @@ public class Laptop {
         this.price = price;
         this.screen = screen;
         this.color = color;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCpu() {
+        return cpu;
+    }
+
+    public String getGpu() {
+        return gpu;
+    }
+
+    public int getRam() {
+        return ram;
+    }
+
+    public int getSsd() {
+        return ssd;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public double getScreen() {
+        return screen;
+    }
+
+    public Color getColor() {
+        return color;
     }
 
     @Override
