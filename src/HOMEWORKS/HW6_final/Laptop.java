@@ -6,11 +6,11 @@ public class Laptop {
     private final String gpu;
     private final int ram;
     private final int ssd;
-    private int price;
+    private final int price;
     private final int screen;
     private final Color color;
 
-    public enum Color {SILVER, BLACK, BLUE}
+    public enum Color {SILVER, BLACK, GREY, BLUE}
 
     public Laptop(String name, String cpu, String gpu, int ram, int ssd, int price, int screen, Color color) {
         this.name = name;
@@ -21,18 +21,6 @@ public class Laptop {
         this.price = price;
         this.screen = screen;
         this.color = color;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getCpu() {
-        return cpu;
-    }
-
-    public String getGpu() {
-        return gpu;
     }
 
     public int getRam() {

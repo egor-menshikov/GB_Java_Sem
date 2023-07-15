@@ -52,6 +52,7 @@ public class PriceFilter {
                     int chosenColorNumeric = sc.nextInt();
                     if (chosenColorNumeric == 1) params.put("color", Laptop.Color.SILVER);
                     else if (chosenColorNumeric == 2) params.put("color", Laptop.Color.BLACK);
+                    else if (chosenColorNumeric == 3) params.put("color", Laptop.Color.GREY);
                     else params.put("color", Laptop.Color.BLUE);
                 }
                 case 7 -> System.out.println(Text.menuExit);

@@ -15,8 +15,8 @@ public class Text {
     public static String menuWrongInput = "Вы ошиблись с выбором, попробуйте еще раз.";
     public static String menuRam = "Введите желаемый объем ОЗУ, гб:";
     public static String menuSSD = "Введите желаемый объем диска SSD, гб:";
-    public static String menuScreenDiag = "Введите диагональ экрана (14, 15, или 17):";
+    public static String menuScreenDiag = "Введите диагональ экрана (14-17):";
     public static String menuPrice = "Введите желаемую цену:";
-    public static String menuColor = "Выберите желаемый цвет:\n1) SILVER\n2) BLACK\n3) BLUE";
+    public static String menuColor = "Выберите желаемый цвет:\n1) SILVER\n2) BLACK\n3) GREY\n4) BLUE";
     public static String menuExit = "До свидания.";
 }
